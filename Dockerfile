@@ -1,7 +1,8 @@
 FROM node:18.16.0
-WORKDIR /src/server/server.js
-ENV PORT 3000
-COPY . .
+WORKDIR /app
+COPY package*.json ./
 RUN npm install
-EXPOSE 3000
+COPY . .
+ENV PORT 8080
+EXPOSE 8080
 CMD [ "npm", "run", "start"]
