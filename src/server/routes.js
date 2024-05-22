@@ -1,3 +1,4 @@
+const { Max } = require("@tensorflow/tfjs-node");
 const {
 	postPredictHandler,
 	getPredictionHistoriesHandler,
